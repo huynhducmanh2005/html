@@ -1,52 +1,42 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="Vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cờ Việt Nam Chuyển Động</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #eee;
-        }
-        .flag {
-            width: 300px;
-            height: 200px;
-            background-color: #da251d;
-            position: relative;
-            overflow: hidden;
-            animation: wave 2s infinite linear;
-        }
-        .star {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 120px;
-            height: 120px;
-            background-color: yellow;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            transform: translate(-50%, -50%);
-        }
-        @keyframes wave {
-            0% {
-                transform: rotate(0deg) translateX(0);
-            }
-            50% {
-                transform: rotate(2deg) translateX(10px);
-            }
-            100% {
-                transform: rotate(0deg) translateX(0);
-            }
-        }
-    </style>
+    <title>BAITAP</title>
 </head>
 <body>
-    <div class="flag">
-        <div class="star"></div>
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm </th>
+                <th>Giá sản phẩm </th>
+                <th>Số lượng còn lại </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Áo thun nam </td>
+                <td>100.000 VND </td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Quần jean nữ</td>
+                <td>200.000 VND</td>
+                <td>20</td>
+            </tr>
+        <tr>
+            <td>Giày thể thao</td>
+            <td>300.000 VND</td>
+            <td>30</td>
+        </tr>
+            <tfoot>
+                <tr>
+                    <td>Remark</td>
+                    <td colspan="2">Chi thống kê sản phẩm trong kho</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
 </body>
 </html>
